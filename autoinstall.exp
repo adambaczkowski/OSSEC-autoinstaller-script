@@ -9,7 +9,7 @@ send "\r"
 send "\r"
 
 #expect "1- What kind of installation do you want (server, agent, local, hybrid or help)?"
-send "server\r"
+send "local\r"
 
 #expect "Choose where to install the OSSEC HIDS [/var/ossec]: "
 send "\r"
