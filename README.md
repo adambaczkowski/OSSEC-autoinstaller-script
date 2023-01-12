@@ -1,5 +1,5 @@
 # OSSEC-autoinstaller-script
-OSSEC autoinstaller script written in bash
+OSSEC autoinstaller script written in bash (change params for your needs!)
 
 How to use:
 sudo apt -y install expect #ON UBUNTU 
