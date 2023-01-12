@@ -1,0 +1,50 @@
+#!/usr/bin/expect
+
+spawn ./install.sh
+
+expect "(en/br/cn/de/el/es/fr/hu/it/jp/nl/pl/ru/sr/tr) [en]:"
+send "\r"
+
+expect "  -- Press ENTER to continue or Ctrl-C to abort. --"
+send "\r"
+
+expect "1- What kind of installation do you want (server, agent, local, hybrid or help)?"
+send "server\r"
+
+expect "Choose where to install the OSSEC HIDS [/var/ossec]: "
+send "\r"
+
+expect "  3.1- Do you want e-mail notification? (y/n) [y]:?"
+send "\r"
+
+expect "   - What's your e-mail address?"
+send "s20132@pjwstk.edu.pl\r"
+
+expect "   - Do you want to use it? (y/n) [y]:"
+send "\r"
+
+expect "Do you want to run the integrity check daemon? (y/n) [y]: "
+send "y\r"
+
+expect "Do you want to run the rootkit detection engine? (y/n) [y]: "
+send "y\r"
+
+expect "Do you want to enable active response? (y/n) [y]: "
+send "y\r"
+
+expect "Do you want to enable the firewall-drop response? (y/n) [y]: "
+send "y\r
+
+expect "   - Do you want to add more IPs to the white list? (y/n)? [n]: "
+send "n\r
+
+expect "  3.5- Do you want to enable remote syslog (port 514 udp)? (y/n) [y]: "
+send "y\r
+
+expect "   --- Press ENTER to continue ---"
+send "\r"
+
+expect "    ---  Press ENTER to finish (maybe more information below). ---"
+send "\r"
+
+expect eof
