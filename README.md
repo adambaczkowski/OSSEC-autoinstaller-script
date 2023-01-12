@@ -1,6 +1,8 @@
 # OSSEC-autoinstaller-script
 OSSEC autoinstaller script written in bash (change params for your needs!)
 
+On default it chooses: server
+
 How to use:
 sudo apt -y install expect #ON UBUNTU 
 
@@ -12,4 +14,4 @@ cd ossec-hids-3.7.0
 
 wget https://raw.githubusercontent.com/adambaczkowski/OSSEC-autoinstaller-script/main/autoinstall.exp
 
-expect -f script.exp
+sudo expect -f script.exp
