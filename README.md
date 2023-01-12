@@ -1,7 +1,7 @@
 # OSSEC-autoinstaller-script
 OSSEC autoinstaller script written in bash (change params for your needs!)
 
-On default it chooses: server
+On default it chooses: local
 
 How to use:
 sudo apt -y install expect #ON UBUNTU 
