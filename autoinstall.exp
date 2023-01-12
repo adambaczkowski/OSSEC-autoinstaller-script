@@ -24,22 +24,22 @@ send "s20132@pjwstk.edu.pl\r"
 send "\r"
 
 #expect "Do you want to run the integrity check daemon? (y/n) [y]: "
-send "y\r"
+send "\r"
 
 #expect "Do you want to run the rootkit detection engine? (y/n) [y]: "
-send "y\r"
+send "\r"
 
 #expect "Do you want to enable active response? (y/n) [y]: "
-send "y\r"
+send "\r"
 
 #expect "Do you want to enable the firewall-drop response? (y/n) [y]: "
-send "y\r
+send "\r
 
 #expect "   - Do you want to add more IPs to the white list? (y/n)? [n]: "
-send "n\r
+send "\r
 
 #expect "  3.5- Do you want to enable remote syslog (port 514 udp)? (y/n) [y]: "
-send "y\r
+send "\r
 
 #expect "   --- Press ENTER to continue ---"
 send "\r"
